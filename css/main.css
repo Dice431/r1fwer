@@ -1,0 +1,1276 @@
+@font-face {
+  font-family: 'FontName';
+  src: url(../fonts/ofontru_Edwardian_Scr_ITC_TT.ttf);
+}
+.styleHeaderNavMobile {
+  font-size: 24px;
+  color: #515096;
+  border-bottom: 4px solid #515096;
+  padding-bottom: 10px;
+}
+.styleHeader {
+  margin: 0 auto;
+}
+.header_hidden {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+body,
+p {
+  color: #48689d;
+  font-family: "FontName";
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+p,
+label {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.wedding__date {
+  font-style: italic;
+  font-size: 40px;
+  font-family: 'FontName';
+}
+.img__block-between {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.img__block-between img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  max-width: 70%;
+}
+@media (max-width: 500px) {
+  .img__block-between {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.titleInSection {
+  font-size: 55px;
+  font-style: italic;
+  font-weight: 300;
+}
+.hidenAnim {
+  opacity: 0;
+}
+.showAnim {
+  -webkit-transition: all 2.5s ease;
+  transition: all 2.5s ease;
+}
+.inpExcretion {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2.5px solid red;
+  font-size: 17px;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.btnAnMin {
+  padding: 25px 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3377F6;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-animation: pulse 1s normal ease-in-out;
+          animation: pulse 1s normal ease-in-out;
+}
+.btnAnMinMob {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3377F6;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-animation: pulse 1s normal ease-in-out;
+          animation: pulse 1s normal ease-in-out;
+}
+.btnPost {
+  padding: 25px 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #33f6bc;
+  -webkit-box-shadow: 0px 4px 4px rgba(37, 26, 26, 0.25);
+          box-shadow: 0px 4px 4px rgba(37, 26, 26, 0.25);
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.btnPostMob {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #33f6bc;
+  -webkit-box-shadow: 0px 4px 4px rgba(37, 26, 26, 0.25);
+          box-shadow: 0px 4px 4px rgba(37, 26, 26, 0.25);
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+header {
+  background-color: rgba(233, 243, 255, 0.74);
+  font-family: 'Alegreya Sans', sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
+  margin-bottom: 60px;
+  line-height: 90px;
+}
+header .nav__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .nav__header .header__nav-link {
+  font-size: 24px;
+  color: #aba3da;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+header .nav__header .header__nav-link:hover {
+  font-size: 24px;
+  color: #515096;
+  border-bottom: 4px solid #515096;
+  padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .header {
+    margin: 0;
+  }
+}
+@media (max-width: 790px) {
+  .header {
+    line-height: 50px;
+  }
+}
+.inviteDate {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+.inviteDate .inviteDate__content .inviteDate__text .brideGroomName {
+  font-family: 'FontName';
+  font-size: 150px;
+  color: #48689d;
+}
+.inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile {
+  display: none;
+}
+.inviteDate .inviteDate__content .inviteDate__text .intention__text {
+  color: gray;
+  font-size: 40px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.inviteDate .inviteDate__content .inviteDate__text .wedding__date {
+  margin-top: 50px;
+  font-size: 40px;
+  color: #48689d;
+}
+@media (max-width: 1200px) {
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomName {
+    display: none;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile {
+    font-size: 120px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile > div {
+    height: 100px;
+    margin-left: 30px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile div:first-child {
+    margin-left: 0px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .intention__text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 940px) {
+  .inviteDate .inviteDate__content .inviteDate__text .intention__text {
+    font-size: 30px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .wedding__date {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 789px) {
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile {
+    font-size: 100px;
+    margin-bottom: 50px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile > div {
+    margin-left: 15px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .intention__text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 625px) {
+  .inviteDate .inviteDate__content .inviteDate__content-imgDiv .inviteDate__img {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile > div {
+    margin-left: 0;
+    height: 80px;
+    font-size: 70px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .intention__text {
+    font-size: 30px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .wedding__date {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .inviteDate .inviteDate__content .inviteDate__img {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .brideGroomNameMobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .intention__text {
+    font-size: 30px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .wedding__date {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) and (max-height: 750px) {
+  .inviteDate .inviteDate__content .inviteDate__content-imgDiv .inviteDate__img {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+}
+@media (max-width: 500px) and (max-height: 720px) {
+  .inviteDate .inviteDate__content .inviteDate__content-imgDiv .inviteDate__img {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+  }
+}
+@media (max-width: 450px) {
+  .inviteDate .inviteDate__content .inviteDate__img {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .intention__text {
+    font-size: 25px;
+  }
+  .inviteDate .inviteDate__content .inviteDate__text .wedding__date {
+    font-size: 40px;
+  }
+}
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.info .info__content .titleInSection {
+  font-weight: 200;
+  font-size: 80px;
+  font-style: normal;
+  margin-bottom: 56px;
+}
+.info .info__content .info__content-text {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 57px;
+}
+.info .info__content .wedding__date {
+  font-size: 64px;
+  margin: 70px 0;
+}
+@media (max-width: 1200px) {
+  .info .info__content .titleInSection {
+    font-size: 75px;
+    margin-bottom: 56px;
+  }
+  .info .info__content .info__content-text {
+    font-size: 40px;
+  }
+  .info .info__content .wedding__date {
+    font-size: 58px;
+  }
+}
+@media (max-width: 940px) {
+  .info .info__content .titleInSection {
+    font-size: 70px;
+  }
+  .info .info__content .info__content-text {
+    font-size: 30px;
+  }
+  .info .info__content .wedding__date {
+    font-size: 58px;
+  }
+}
+@media (max-width: 500px) {
+  .info .info__content .titleInSection {
+    font-size: 60px;
+  }
+  .info .info__content .info__content-text {
+    font-size: 30px;
+  }
+  .info .info__content .wedding__date {
+    font-size: 54px;
+  }
+}
+.left {
+  margin-top: 45%;
+}
+.right {
+  height: 100%;
+}
+.bottom {
+  margin-top: 400px;
+}
+.programmDay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-image: url(/img/backgroundProgrammDay.png);
+  background-repeat: no-repeat no-repeat;
+  background-position: left;
+  background-position-x: -80px;
+  background-size: 10%;
+  width: 100%;
+}
+.programmDay .programmDay__content .titleInSection {
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+}
+.programmDay .programmDay__content .programmDay__items {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.programmDay .programmDay__content .programmDay__items .programmDay__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  font-size: 30px;
+}
+.programmDay .programmDay__content .programmDay__items .programmDay__item p {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.programmDay .programmDay__content .programmDay__items .programmDay__item span,
+.programmDay .programmDay__content .programmDay__items .programmDay__item .programmDay__item-title {
+  font-family: 'FontName';
+  font-size: 55px;
+}
+.programmDay .programmDay__content .programmDay__items .programmDay__item > img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.programmDay .programmDay__content .programmDay__items .programmDay__item-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 965px) {
+  .bottom {
+    margin-top: 0;
+  }
+  .left {
+    margin-top: 0;
+  }
+  .programmDay .programmDay__content .titleInSection {
+    font-size: 70px;
+  }
+  .programmDay .programmDay__content .programmDay__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .programmDay .programmDay__content .programmDay__items .imgLineDiv {
+    display: none;
+  }
+  .programmDay .programmDay__content .programmDay__items .programmDay__item {
+    width: 100%;
+    margin-bottom: 70px;
+    font-size: 32px;
+  }
+  .programmDay .programmDay__content .programmDay__items .programmDay__item span,
+  .programmDay .programmDay__content .programmDay__items .programmDay__item .programmDay__item-title {
+    font-size: 48px;
+  }
+  .programmDay .programmDay__content .programmDay__items .programmDay__item > img {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+  .programmDay .programmDay__content .programmDay__items .programmDay__item:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .programmDay .programmDay__content .programmDay__items .programmDay__item-right:last-child .bottom {
+    margin: 0;
+  }
+}
+@media (max-width: 800px) {
+  .programmDay .programmDay__content .programmDay__items .programmDay__item {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .programmDay .programmDay__content .programmDay__items {
+    margin-top: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .programmDay .programmDay__content .programmDay__items .programmDay__item {
+    width: 100%;
+    margin-bottom: 70px;
+    font-size: 25px;
+  }
+  .programmDay .programmDay__content .programmDay__items .programmDay__item span,
+  .programmDay .programmDay__content .programmDay__items .programmDay__item .programmDay__item-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .programmDay .programmDay__content .titleInSection {
+    font-size: 60px;
+  }
+}
+.inviteForm {
+  text-align: center;
+  width: 100%;
+}
+.inviteForm .inviteFormTitle {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.inviteForm .inviteFormSubTitle {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.inviteForm .form {
+  text-align: left;
+}
+.inviteForm .form .formRadio__titleDiv {
+  margin-bottom: 20px;
+}
+.inviteForm .form .formRadio__titleDiv .formRadio__titleDiv-title {
+  font-size: 35px;
+}
+.inviteForm .form .formRadio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.inviteForm .form .formRadio .formRadio-items .formRadio-item {
+  margin-bottom: 5px;
+}
+.inviteForm .form .formRadio .formRadio-items .formRadio-item .divInput .formRadio__item-input {
+  width: 20px;
+  height: 20px;
+}
+.inviteForm .form .formRadio .formRadio-items .formRadio-item .formLabel {
+  font-size: 25px;
+  margin-left: 30px;
+}
+.inviteForm .form .inputInfoPerson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px 0;
+}
+.inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo {
+  margin-top: 50px;
+}
+.inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputEnterInfoTitle {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputEnterInfoTitle:first-child {
+  margin-bottom: 0px;
+}
+.inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputDataPer {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2.5px solid #2c71e9;
+  font-size: 17px;
+}
+.inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo:first-child {
+  margin-top: 0;
+}
+.inviteForm .form .inputInfoPerson .oneRightDivForm {
+  height: 400px;
+  width: 200px;
+}
+.inviteForm .form .selectBev {
+  text-align: center;
+}
+.inviteForm .form .selectBev p {
+  font-weight: 500;
+  font-size: 36px;
+  color: #48689d;
+}
+.inviteForm .form .selectBev .selectBevBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  margin-top: 70px;
+}
+.inviteForm .form .selectBev .selectBevBottom > div > div {
+  margin-bottom: 15px;
+}
+.inviteForm .form .selectBev .selectBevBottom > div > div:last-child {
+  margin-bottom: 0px;
+}
+.inviteForm .form .selectBev .selectBevBottom .selectBevLabel {
+  color: #48689d;
+  margin-left: 15px;
+  font-size: 34px;
+}
+.inviteForm .form .selectBev .selectBevBottom .option-input {
+  width: 23px;
+  height: 23px;
+}
+.inviteForm .form .selectBev .selectBevBottom .btnDiv {
+  margin-top: auto;
+}
+.inviteForm .form .selectBev .selectBevBottom .btnDiv .btn {
+  padding: 25px 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3377F6;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.inviteForm .form .selectBev .selectBevBottom .btnDiv .btn:hover {
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .inviteForm .inviteFormSubTitle {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  .inviteForm .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inviteForm .form .formRadio__titleDiv {
+    margin-bottom: 20px;
+  }
+  .inviteForm .form .formRadio__titleDiv .formRadio__titleDiv-title {
+    font-size: 35px;
+  }
+  .inviteForm .form .formRadio .formRadio-items .formRadio-item .formLabel {
+    font-size: 35px;
+    margin-left: 30px;
+  }
+  .inviteForm .form .inputInfoPerson {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .inviteForm .form .inputInfoPerson .oneRightDivForm {
+    width: 0;
+    height: 0;
+  }
+  .inviteForm .form .selectBev {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .inviteForm .form .selectBev p {
+    font-weight: 500;
+    font-size: 36px;
+    color: #48689d;
+  }
+  .inviteForm .form .selectBev .selectBevBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: left;
+    margin-top: 70px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom > div > div {
+    margin-bottom: 15px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom > div > div:last-child {
+    margin-bottom: 0px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevLabel {
+    color: #48689d;
+    margin-left: 15px;
+    font-size: 34px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .btnDiv {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .inviteForm .inviteFormTitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .inviteForm .inviteFormSubTitle {
+    font-size: 30px;
+  }
+  .inviteForm .form .formRadio .formRadio-items {
+    width: 100%;
+  }
+  .inviteForm .form .inputInfoPerson {
+    margin-bottom: 80px;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items {
+    width: 100%;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo {
+    margin-top: 50px;
+    text-align: left;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputEnterInfoTitle {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputEnterInfoTitle:first-child {
+    margin-bottom: 0px;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputDataPer {
+    width: 100%;
+    font-size: 17px;
+  }
+  .inviteForm .form .inputInfoPerson .imgRightDivForm {
+    display: none;
+  }
+  .inviteForm .form .inputInfoPerson .imgRightDivForm .oneRightDivForm {
+    width: 100%;
+  }
+  .inviteForm .form .selectBev {
+    text-align: center;
+  }
+  .inviteForm .form .selectBev div {
+    margin-bottom: 40px;
+  }
+  .inviteForm .form .selectBev > div:last-child {
+    margin-bottom: 0;
+  }
+  .inviteForm .form .selectBev p {
+    font-weight: 500;
+    font-size: 36px;
+    color: #48689d;
+  }
+  .inviteForm .form .selectBev .selectBevBottom {
+    margin-top: 70px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top {
+    width: 100%;
+    line-height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top .selectBevBottom-top-img {
+    display: block;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top .selectBevBottom-top-img .selectBevBottom-top-img-one {
+    width: 250px;
+    height: 400px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom > div > div {
+    margin-bottom: 10px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevLabel {
+    font-size: 34px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .btnDiv {
+    margin-top: auto;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 665px) {
+  .inviteForm .inviteFormTitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .inviteForm .inviteFormSubTitle {
+    font-size: 30px;
+  }
+  .inviteForm .form .formRadio .formRadio-items .formRadio-item .formLabel {
+    font-size: 25px;
+  }
+  .inviteForm .form .inputInfoPerson {
+    margin-bottom: 80px;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items {
+    width: 100%;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo {
+    margin-top: 50px;
+    text-align: left;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputEnterInfoTitle {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputEnterInfoTitle:first-child {
+    margin-bottom: 0px;
+  }
+  .inviteForm .form .inputInfoPerson .inputEnterInfo-items .inputEnterInfo .inputDataPer {
+    width: 100%;
+    font-size: 17px;
+  }
+  .inviteForm .form .inputInfoPerson .imgRightDivForm {
+    display: none;
+  }
+  .inviteForm .form .inputInfoPerson .imgRightDivForm .oneRightDivForm {
+    width: 100%;
+  }
+  .inviteForm .form .selectBev {
+    text-align: center;
+  }
+  .inviteForm .form .selectBev div {
+    margin-bottom: 50px;
+  }
+  .inviteForm .form .selectBev p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #48689d;
+  }
+  .inviteForm .form .selectBev .selectBevBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+    margin-top: 70px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top {
+    width: 100%;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top .selectBevBottom-top-img {
+    display: block;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top .selectBevBottom-top-img .selectBevBottom-top-img-one {
+    width: 100px;
+    height: 250px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top div:last-child {
+    margin-bottom: 0;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top div:last-child .selectBevLabel {
+    font-size: 24px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom > div > div {
+    margin-bottom: 15px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom > div > div:last-child {
+    margin-bottom: 0px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevLabel {
+    font-size: 34px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .btnDiv {
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .inviteForm .inviteFormTitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .inviteForm .inviteFormSubTitle {
+    font-size: 30px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top .option-input {
+    width: 18px;
+    height: 18px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top .selectBevLabel {
+    font-size: 25px;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top .selectBevBottom-top-img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top div:last-child .selectBevLabel {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .inviteForm .form .selectBev .selectBevBottom .selectBevBottom-top .selectBevBottom-top-img {
+    display: none;
+  }
+  .inviteForm .form .selectBev .selectBevBottom .btnDiv .btn {
+    font-size: 20px;
+    width: 50%;
+    padding: 15px;
+  }
+}
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.map .map__content .map__content-text {
+  font-size: 35px;
+  line-height: 40px;
+  margin-top: 30px;
+}
+.map .map__content .mapYandex {
+  margin-top: 90px;
+  width: 100%;
+  height: 720px;
+  border: 0;
+}
+.map .map__content .mapMob {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .map {
+    padding-bottom: 70px;
+  }
+  .map .map__content .map__content-text {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .map .map__content .mapYandex {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (max-width: 940px) {
+  .map .map__content .mapYandex-div {
+    display: none;
+  }
+  .map .map__content .mapMob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map .map__content .mapMob .linkMapOpen-div {
+    margin-top: 50px;
+    width: 45%;
+  }
+  .map .map__content .mapMob .linkMapOpen-div .linkMapOpen {
+    display: block;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #2c71e9;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+@media (max-width: 545px) {
+  .map .map__content .mapMob .mapMob-divImg-img {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .map .map__content .mapMob .linkMapOpen-div {
+    width: 50%;
+  }
+}
+@media (max-width: 470px) {
+  .map .map__content .mapMob .mapMob-divImg-img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .map .map__content .mapMob .linkMapOpen-div {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .map .map__content .mapMob .mapMob-divImg-img {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 100px;
+  background-image: url(../img/flowerCalendar.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+  width: 100%;
+}
+.countdown .countdowsTop {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.countdown .countdowsTop .countdowsTop-date {
+  font-size: 50px;
+}
+.countdown .countdowsTop .countdowsTop-subdate {
+  font-size: 20px;
+  color: #48689d;
+}
+.countdown .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-bottom: 80px;
+}
+.countdown .timer .timer-item {
+  text-align: center;
+  margin: 0 70px;
+  font-size: 45px;
+  font-weight: 400;
+}
+.countdown .timer .timerLinerImg {
+  height: 100px;
+}
+.countdown .calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 700px) {
+  .countdown .countdowsTop {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .countdown .countdowsTop .countdowsTop-date {
+    font-size: 50px;
+  }
+  .countdown .countdowsTop .countdowsTop-subdate {
+    font-size: 20px;
+  }
+  .countdown .timer {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .countdown .timer .timer-item {
+    font-size: 32px;
+    margin: 0 25px;
+  }
+  .countdown .timer .timer-item:last-child {
+    margin-bottom: 0;
+  }
+  .countdown .timerLinerImg {
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .countdown .countdowsTop {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .countdown .countdowsTop .countdowsTop-date {
+    font-size: 50px;
+  }
+  .countdown .countdowsTop .countdowsTop-subdate {
+    font-size: 20px;
+  }
+  .countdown .timer {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .countdown .timer .timer-item {
+    font-size: 30px;
+    margin: 15px;
+    margin-bottom: 30px;
+  }
+  .countdown .timer .timer-item:last-child {
+    margin-bottom: 0;
+  }
+  .countdown .calendar .imgCalendar {
+    width: 100%;
+  }
+}
+.footer {
+  padding-top: 100px;
+  text-align: center;
+}
+.footer > div {
+  margin-bottom: 60px;
+}
+.footer .footerTop {
+  font-size: 60px;
+}
+.footer .footerTop .footerText {
+  font-weight: 300;
+}
+.footer .footerBottom {
+  font-size: 90px;
+}
+.footer .footerBottom .footerText {
+  font-weight: 300;
+}
+@media (max-width: 770px) {
+  .footer .imgFooter {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    text-align: center;
+  }
+  .footer > div {
+    margin-bottom: 60px;
+  }
+  .footer .footerTop {
+    font-size: 50px;
+  }
+  .footer .footerTop .footerText {
+    font-weight: 300;
+  }
+  .footer .footerBottom {
+    font-size: 60px;
+  }
+  .footer .footerBottom .footerText {
+    font-weight: 300;
+  }
+  .footer .imgFooter {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}

@@ -1,0 +1,1707 @@
+@clLinkHeader: #ABA3DA;
+@clLinkHeaderHover: #515096;
+@clText: #48689D;
+@fontText: 'Alegreya Sans', sans-serif;
+@borderBotInp: #2C71E9;
+@radioSize: 22px;
+@radioBorder: #D1D7E3;
+@radioActive: #5D9BFB;
+
+//обычный шрифт
+@font-face {
+	font-family: 'FontName'; 
+	src: url(../fonts/ofontru_Edwardian_Scr_ITC_TT.ttf); 
+}
+
+
+.WH(@width: auto, @height: auto) {
+    width: @width;
+    height: @height;
+}
+
+.styleHeaderNavMobile {
+    font-size: 24px;
+    color: #515096;
+
+    border-bottom: 4px solid @clLinkHeaderHover;
+    padding-bottom: 10px;
+}
+
+.styleHeader {
+    margin: 0 auto;
+}
+
+.header_hidden {
+    transform: translateY(-100%);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body, p {
+    color: @clText;
+
+    font-family: "FontName";
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p, label {
+    font-family: @fontText;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wedding__date {
+    font-style: italic;
+    font-size: 40px;
+    font-family: 'FontName';
+}
+
+.img__block-between {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+
+    img {
+        object-fit: cover;
+        height: auto;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .img__block-between {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+}
+
+
+.titleInSection {
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.hidenAnim {
+    opacity: 0;
+}
+
+.showAnim {
+    transition: all 2.5s ease;
+}
+
+.inpExcretion {
+    margin-top: 30px; 
+    padding-bottom: 10px;
+    width: 100%;
+
+    background: transparent;
+
+    outline: none;
+
+    border: none;
+    border-bottom: 2.5px solid red;
+
+    font-size: 17px;
+}
+
+
+@keyframes pulse {
+    from {
+      transform: scale(.85);
+    }
+    50% {
+      transform: scale(1);
+    }
+}
+  
+
+.btnAnMin {
+    padding: 25px 100px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #3377F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    animation: pulse 1s normal ease-in-out;
+}
+
+.btnAnMinMob {
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #3377F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    animation: pulse 1s normal ease-in-out;
+}
+
+
+.btnPost {
+    padding: 25px 100px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #33f6bc;
+    box-shadow: 0px 4px 4px rgba(37, 26, 26, 0.25);
+
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    text-transform: uppercase;
+   
+}
+
+.btnPostMob {
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #33f6bc;
+    box-shadow: 0px 4px 4px rgba(37, 26, 26, 0.25);
+
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    text-transform: uppercase;
+   
+}
+
+// header
+// -----------------------------
+header {
+    background-color: rgba(233, 243, 255, 0.74);
+    
+    font-family: @fontText;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: 1s;
+
+    width: 100%;
+
+    margin-bottom: 60px;
+    line-height: 90px;
+    .nav__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__nav-link {
+            
+            font-size: 24px;
+            color: @clLinkHeader;
+
+            transition: all .4s;
+        }
+
+        .header__nav-link:hover {
+            font-size: 24px;
+            color: #515096;
+
+            border-bottom: 4px solid @clLinkHeaderHover;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+// header
+// -----------------------------
+@media (max-width: 500px) {
+    .header {
+        margin: 0;
+    }
+}
+
+@media (max-width: 790px) {
+    .header {
+        line-height: 50px;
+    }
+}
+
+
+// inviteDate
+// ------------------------------
+.inviteDate {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .inviteDate__content {
+        .inviteDate__text {
+            .brideGroomName {
+                font-family: 'FontName';
+                font-size: 150px;
+                color: @clText;
+            }
+
+            .brideGroomNameMobile {
+                display: none;
+            }
+            
+            .intention__text {
+                color: gray;
+                font-size: 40px;
+                font-family: 'Alegreya Sans', sans-serif;
+            }
+
+            .wedding__date {
+                margin-top: 50px;
+                font-size: 40px;
+
+                color: @clText;
+            }
+        }
+    }
+}
+
+// inviteDate @media
+// ------------------------------
+@media (max-width: 1200px) {
+    .inviteDate {
+        .inviteDate__content {
+            .inviteDate__text {
+                
+                .brideGroomName {
+                    display: none;
+                }
+
+                .brideGroomNameMobile {
+                    font-size: 120px;
+
+                    margin-bottom: 50px;
+
+                    display: flex;
+                    justify-content: center;
+
+                    >div {
+                        height: 100px;
+                        
+                        margin-left: 30px;
+                    }
+
+                    div:first-child {
+                        margin-left: 0px;
+                    }
+                }
+                
+                .intention__text {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .inviteDate {
+        .inviteDate__content {
+
+            .inviteDate__text {
+                
+                .intention__text {
+                    font-size: 30px;
+                }
+    
+                .wedding__date {
+                    margin-top: 50px;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 789px) {
+    .inviteDate {
+        .inviteDate__content {
+            .inviteDate__text {
+                
+                .brideGroomNameMobile {
+                    font-size: 100px;
+
+                    margin-bottom: 50px;
+
+                    >div {
+                        margin-left: 15px;
+                    }
+                }
+                
+                .intention__text {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 625px) {
+    .inviteDate {
+        .inviteDate__content {
+            .inviteDate__content-imgDiv {
+                .inviteDate__img {
+                    transform: scale(.65);
+                }
+            }
+
+            .inviteDate__text {
+                
+                .brideGroomNameMobile {
+
+                    flex-direction: column;
+
+                    >div {
+                        margin-left: 0;
+                        height: 80px;
+
+                        font-size: 70px;
+                    }
+                }
+                
+                .intention__text {
+                    font-size: 30px;
+                }
+    
+                .wedding__date {
+                    margin-top: 50px;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .inviteDate {
+        .inviteDate__content {
+                .inviteDate__img {
+                    transform: scale(.75);
+                }
+
+            .inviteDate__text {
+                
+                .brideGroomNameMobile {
+                    flex-direction: column;
+                }
+                
+                .intention__text {
+                    font-size: 30px;
+                }
+    
+                .wedding__date {
+                    margin-top: 50px;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) and (max-height: 750px) {
+    .inviteDate {
+        .inviteDate__content {
+            .inviteDate__content-imgDiv {
+                .inviteDate__img {
+                    transform: scale(.65);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) and (max-height: 720px) {
+    .inviteDate {
+        .inviteDate__content {
+            .inviteDate__content-imgDiv {
+                .inviteDate__img {
+                    transform: scale(.45);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .inviteDate {
+        .inviteDate__content {
+                .inviteDate__img {
+                    transform: scale(.55);
+                }
+
+            .inviteDate__text {
+                
+                .intention__text {
+                    font-size: 25px;
+                }
+    
+                .wedding__date {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+// info
+// ------------------------------
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+
+    .info__content {
+       
+        .titleInSection {
+            font-weight: 200;
+            font-size: 80px;
+            font-style: normal;
+            margin-bottom: 56px;
+        }
+
+        .info__content-text {
+            font-family: 'Alegreya Sans', sans-serif;
+            font-size: 48px;
+            font-weight: 200;
+
+            line-height: 57px;
+        }
+
+        .wedding__date {
+            font-size: 64px;
+
+            margin: 70px 0;
+        }
+    }
+}
+
+// info
+// ------------------------------
+@media (max-width: 1200px) {
+    .info {
+        .info__content {
+            .titleInSection {
+                font-size: 75px;
+                margin-bottom: 56px;
+            }
+    
+            .info__content-text {
+                font-size: 40px;
+            }
+    
+            .wedding__date {
+                font-size: 58px;
+            }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .info {
+        .info__content {
+            .titleInSection {
+                font-size: 70px;
+            }
+    
+            .info__content-text {
+                font-size: 30px;
+            }
+    
+            .wedding__date {
+                font-size: 58px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .info {
+        .info__content {
+            .titleInSection {
+                font-size: 60px;
+            }
+    
+            .info__content-text {
+                font-size: 30px;
+            }
+    
+            .wedding__date {
+                font-size: 54px;
+            }
+        }
+    }
+}
+
+.left {
+    margin-top: 45%;
+}
+
+.right {
+    height: 100%;
+}
+
+.bottom {
+    margin-top: 400px;
+}
+// programmDay
+// ------------------------------
+.programmDay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-image: url(/img/backgroundProgrammDay.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: left;
+    background-position-x: -80px;
+    background-size: 10%;
+
+    width: 100%;
+
+    .programmDay__content {
+
+        .titleInSection {
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .programmDay__items {
+            margin-top: 100px;
+
+            display: flex;
+            justify-content: space-between;
+
+            .programmDay__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                text-align: center;
+                align-items: center;
+
+                width: 60%;
+
+                font-size: 30px;
+
+                p {
+                    font-family: @fontText;
+                }
+
+                span, .programmDay__item-title {
+                    font-family: 'FontName';
+                    font-size: 55px;
+                }
+               
+                >img {
+                    display: block;
+                    .WH(200px, 200px);
+                }
+            }
+
+            .programmDay__item-right {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+// programmDay media
+// ------------------------------
+@media (max-width: 965px) {
+
+    .bottom {
+        margin-top: 0;
+    }
+    
+    .left {
+        margin-top: 0;
+    }
+
+    .programmDay {
+        .programmDay__content {
+            .titleInSection {
+                font-size: 70px;
+            }
+    
+            .programmDay__items {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .imgLineDiv {
+                    display: none;
+                }
+
+                .programmDay__item {
+                    width: 100%;
+
+                    margin-bottom: 70px;
+    
+                    font-size: 32px;
+    
+                    span, .programmDay__item-title {
+                        font-size: 48px;
+                    }
+                   
+                    >img {
+                        display: block;
+                        .WH(100px, 100px);
+                    }
+                }
+
+                .programmDay__item:nth-child(2) {
+                    order: 1;
+                }
+
+
+                .programmDay__item-right:last-child {
+                    .bottom {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .programmDay {
+        .programmDay__content {
+    
+            .programmDay__items {
+
+                .programmDay__item {
+                    width: 80%;
+    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .programmDay {
+        .programmDay__content {
+    
+            .programmDay__items {
+                margin-top: 100px;
+
+                justify-content: center;
+                flex-direction: column;
+
+                .programmDay__item {
+                    width: 100%;
+
+                    margin-bottom: 70px;
+    
+                    font-size: 25px;
+    
+                    span, .programmDay__item-title {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .programmDay {
+        .programmDay__content {
+
+            .titleInSection {
+                font-size: 60px;
+            }
+    
+        }
+    }
+}
+
+
+// inviteForm
+// ------------------------------
+.inviteForm {
+
+    text-align: center;
+    width: 100%;
+
+    .inviteFormTitle {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .inviteFormSubTitle {
+        font-size: 25px;
+
+        margin-bottom: 50px;
+    }
+
+    .form {
+        text-align: left;
+
+        .formRadio__titleDiv {
+            margin-bottom: 20px;
+            .formRadio__titleDiv-title {
+                font-size: 35px;
+            }
+        }
+        
+
+        .formRadio {
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: space-between;
+
+            .formRadio-items {
+
+                .formRadio-item {
+                    margin-bottom: 5px;
+
+                    .divInput {
+                        .formRadio__item-input {
+                            .WH(20px, 20px);
+                        }
+                    }
+                    
+                    .formLabel {
+                        font-size: 25px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+
+        .inputInfoPerson {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 80px 0;
+
+            .inputEnterInfo-items {
+                .inputEnterInfo {
+                    margin-top: 50px;
+    
+                    .inputEnterInfoTitle {
+                        font-size: 24px;
+                        font-weight: 900;
+    
+                        margin-bottom: 20px;
+                    }
+    
+                    .inputEnterInfoTitle:first-child {
+                        margin-bottom: 0px;
+                    }
+    
+                    .inputDataPer {
+                        margin-top: 30px; 
+                        padding-bottom: 10px;
+                        width: 100%;
+
+                        background: transparent;
+    
+                        outline: none;
+    
+                        border: none;
+                        border-bottom: 2.5px solid @borderBotInp;
+    
+                        font-size: 17px;
+                    }
+                }
+
+                .inputEnterInfo:first-child {
+                    margin-top: 0;
+                   
+                }
+            }
+
+            .oneRightDivForm {
+                height: 400px;
+                width: 200px;
+            }
+           
+        }
+
+        .selectBev {
+            text-align: center;
+
+            p {
+                font-weight: 500;
+                font-size: 36px;
+
+                color: @clText;
+            }
+
+            .selectBevBottom {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                text-align: left;
+
+                margin-top: 70px;
+                
+
+                >div {
+                    >div {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                >div {
+                    >div:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .selectBevLabel {
+                    color: @clText;
+                    margin-left: 15px;
+                    font-size: 34px;
+                }
+
+                .option-input {
+                    width: 23px;
+                    height: 23px;
+                }
+
+                .btnDiv {
+                    margin-top: auto;
+
+                    .btn {
+                        padding: 25px 100px;
+                    
+                        border: none;
+                        border-radius: 10px;
+                    
+                        background-color: #3377F6;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    
+                        font-size: 25px;
+                        color: #fff;
+                        letter-spacing: 0.06em;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+                    
+                    .btn:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// inviteForm - media
+// ------------------------------
+@media (max-width: 1200px) {
+    .inviteForm {
+        .inviteFormSubTitle {
+            font-size: 35px;
+    
+            margin-bottom: 50px;
+        }
+    
+        .form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .formRadio__titleDiv {
+                margin-bottom: 20px;
+                .formRadio__titleDiv-title {
+                    font-size: 35px;
+                }
+            }
+    
+            .formRadio {
+                .formRadio-items {
+                    .formRadio-item {
+                        .formLabel {
+                            font-size: 35px;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+    
+            .inputInfoPerson {
+                justify-content: center;
+    
+                .oneRightDivForm {
+                    .WH(0, 0);
+                }
+            }
+    
+            .selectBev {
+                text-align: center;
+                margin-top: 60px;
+    
+                p {
+                    font-weight: 500;
+                    font-size: 36px;
+    
+                    color: @clText;
+                }
+    
+                .selectBevBottom {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+    
+                    text-align: left;
+    
+                    margin-top: 70px;
+                    
+    
+                    >div {
+                        >div {
+                            margin-bottom: 15px;
+                        }
+                    }
+    
+                    >div {
+                        >div:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+    
+                    .selectBevLabel {
+                        color: @clText;
+                        margin-left: 15px;
+                        font-size: 34px;
+                    }
+    
+                    .btnDiv {
+                        margin-left: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .inviteForm {
+
+        .inviteFormTitle {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    
+        .inviteFormSubTitle {
+            font-size: 30px;
+        }
+    
+        .form {
+            .formRadio {
+                .formRadio-items {
+                    width: 100%;
+                }
+            }
+    
+            .inputInfoPerson {
+                margin-bottom: 80px;
+
+                .inputEnterInfo-items {
+                    width: 100%;
+                    .inputEnterInfo {
+                        margin-top: 50px;
+                        text-align: left;
+        
+                        .inputEnterInfoTitle {
+                            font-size: 24px;
+                            font-weight: 900;
+        
+                            margin-bottom: 20px;
+                        }
+        
+                        .inputEnterInfoTitle:first-child {
+                            margin-bottom: 0px;
+                        }
+        
+                        .inputDataPer {
+                            width: 100%;
+        
+                            font-size: 17px;
+                        }
+                    }
+                }
+                
+
+                .imgRightDivForm {
+                    display: none;
+    
+                    .oneRightDivForm {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .selectBev {
+                text-align: center;
+
+                div {
+                    margin-bottom: 40px;
+                }
+
+                >div:last-child {
+                    margin-bottom: 0;
+                }
+    
+                p {
+                    font-weight: 500;
+                    font-size: 36px;
+    
+                    color: @clText;
+                }
+    
+                .selectBevBottom {
+                    margin-top: 70px;
+
+                    .selectBevBottom-top {
+                        width: 100%;
+                        line-height: 0;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .selectBevBottom-top-img {
+                            display: block;
+
+                            .selectBevBottom-top-img-one {
+                                .WH(250px, 400px);
+                            }
+                        }
+                    }
+
+                    >div {
+                        >div {
+                            margin-bottom: 10px;
+                        }
+                    }
+    
+    
+                    .selectBevLabel {
+                        font-size: 34px;
+                    }
+    
+                    .btnDiv {
+                        margin-top: auto;
+                        text-align: center;
+                        margin-left: 0;
+                        width: 100%;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 665px) {
+
+    .inviteForm {
+        .inviteFormTitle {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    
+        .inviteFormSubTitle {
+            font-size: 30px;
+        }
+    
+        .form {
+            .formRadio {
+                .formRadio-items {
+                    .formRadio-item {
+                        .formLabel {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+    
+            .inputInfoPerson {
+                margin-bottom: 80px;
+
+                .inputEnterInfo-items {
+                    width: 100%;
+                    .inputEnterInfo {
+                        margin-top: 50px;
+                        text-align: left;
+        
+                        .inputEnterInfoTitle {
+                            font-size: 24px;
+                            font-weight: 900;
+        
+                            margin-bottom: 20px;
+                        }
+        
+                        .inputEnterInfoTitle:first-child {
+                            margin-bottom: 0px;
+                        }
+        
+                        .inputDataPer {
+                            width: 100%;
+        
+                            font-size: 17px;
+                        }
+                    }
+                }
+                
+
+                .imgRightDivForm {
+                    display: none;
+    
+                    .oneRightDivForm {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .selectBev {
+                text-align: center;
+
+                div {
+                    margin-bottom: 50px;
+                }
+    
+                p {
+                    font-weight: 500;
+                    font-size: 20px;
+    
+                    color: @clText;
+                }
+    
+                .selectBevBottom {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    text-align: left;
+    
+                    margin-top: 70px;
+
+                    .selectBevBottom-top {
+                        width: 100%;
+
+
+                        .selectBevBottom-top-img {
+                            display: block;
+
+                            .selectBevBottom-top-img-one {
+                                .WH(100px, 250px);
+                            }
+                        }
+                    }
+
+                    .selectBevBottom-top {
+                        div:last-child {
+                            margin-bottom: 0;
+                            .selectBevLabel {
+                                font-size: 24px;
+                            }
+                        }
+                    }
+
+                    >div {
+                        >div {
+                            margin-bottom: 15px;
+                        }
+                    }
+    
+                    >div {
+                        >div:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+    
+                    .selectBevLabel {
+                        font-size: 34px;
+                    }
+    
+                    .btnDiv {
+                        margin-top: auto;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .inviteForm {
+        .inviteFormTitle {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    
+        .inviteFormSubTitle {
+            font-size: 30px;
+        }
+    
+        .form {
+            .selectBev {
+                .selectBevBottom {
+                    
+                    .selectBevBottom-top {
+                        .option-input {
+                            .WH(18px, 18px);
+                        }
+
+                        .selectBevLabel {
+                            font-size: 25px;
+                        }
+
+                        .selectBevBottom-top-img {
+                            transform: scale(.7);
+                        }
+
+                        div:last-child {
+                            .selectBevLabel {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .inviteForm {
+        .form {
+            .selectBev {
+                .selectBevBottom {
+                    .selectBevBottom-top {
+                        .selectBevBottom-top-img {
+                            display: none;
+                        }
+                    }
+
+                    .btnDiv {
+                        .btn {
+                            font-size: 20px;
+                            width: 50%;
+
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// map
+// ------------------------------
+.map {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    .map__content {
+       
+        .map__content-text {    
+            font-size: 35px;
+            line-height: 40px;
+
+            margin-top: 30px;
+        }
+    
+        .mapYandex {
+            margin-top: 90px;
+            width: 100%; 
+            height: 720px; 
+            border: 0; 
+        }
+
+        .mapMob {
+            display: none;
+        }
+    }
+}
+
+// map
+// ------------------------------
+@media (max-width: 1200px) {
+    .map {
+        padding-bottom: 70px;
+
+        .map__content {
+            .map__content-text {
+                font-size: 35px;
+                line-height: 40px;
+            }
+        
+            .mapYandex {
+                width: 100%;
+                height: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .map {
+        .map__content {
+            .mapYandex-div {
+                display: none;
+            }
+
+            .mapMob {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+
+    
+                .linkMapOpen-div {
+                    margin-top: 50px;
+                    width: 45%;
+                   
+                    .linkMapOpen {
+                        display: block;
+    
+                        font-family: @fontText;
+                        font-size: 20px;
+                        color: #fff;
+                        font-weight: 700;
+    
+                        padding: 10px 20px;
+                        
+                        border-radius: 10px;
+                        background-color: @borderBotInp;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    .map {
+        .map__content {
+            .mapMob {
+                .mapMob-divImg-img {
+                    transform: scale(.9);
+                }
+
+                .linkMapOpen-div {
+                    width: 50%;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .map {
+        .map__content {
+            .mapMob {
+                .mapMob-divImg-img {
+                    transform: scale(.8);
+                }
+                .linkMapOpen-div {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .map {
+        .map__content {
+            .mapMob {
+                .mapMob-divImg-img {
+                    transform: scale(.75);
+                }
+            }
+        }
+    }
+}
+
+// countdown
+// ------------------------------
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 100px;
+    
+    background-image: url(../img/flowerCalendar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    height: 100%;
+    width: 100%;
+
+    .countdowsTop {
+        text-align: center;
+        margin-bottom: 80px;
+
+        .countdowsTop-date {
+            font-size: 50px;
+        }
+
+        .countdowsTop-subdate {
+            font-size: 20px;
+            color: @clText;
+        }
+    }
+
+    .timer {
+        display: flex;
+        justify-content: center;
+        
+        font-family: @fontText;
+
+        margin-bottom: 80px;
+
+        .timer-item {
+            text-align: center;
+            margin: 0 70px;
+
+            font-size: 45px;
+            font-weight: 400;
+        }
+
+        .timerLinerImg {
+           height: 100px;
+        }
+    }
+
+    .calendar {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+// countdown media
+// ------------------------------
+@media (max-width: 700px) {
+    .countdown {
+        .countdowsTop {
+            text-align: center;
+            margin-bottom: 80px;
+    
+            .countdowsTop-date {
+                font-size: 50px;
+            }
+    
+            .countdowsTop-subdate {
+                font-size: 20px;
+            }
+        }
+    
+        .timer {
+            width: 100%;
+            margin-bottom: 80px;
+
+            .timer-item {
+                font-size: 32px;
+                margin: 0 25px;
+
+            }
+
+            .timer-item:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .timerLinerImg {
+            height: 300px;
+        }
+    } 
+}
+
+@media (max-width: 500px) {
+    .countdown {
+        .countdowsTop {
+            text-align: center;
+            margin-bottom: 80px;
+    
+            .countdowsTop-date {
+                font-size: 50px;
+            }
+    
+            .countdowsTop-subdate {
+                font-size: 20px;
+            }
+        }
+    
+        .timer {
+            width: 100%;
+            margin-bottom: 80px;
+
+            .timer-item {
+                font-size: 30px;
+                margin: 15px;
+
+                margin-bottom: 30px;
+            }
+
+            .timer-item:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .calendar {
+            .imgCalendar {
+                width: 100%;
+            }
+        }
+    
+    } 
+}
+
+// footer
+// ------------------------------
+.footer {
+    padding-top: 100px;
+
+    text-align: center;
+
+    > div {
+        margin-bottom: 60px;
+    }
+
+    .footerTop {
+        font-size: 60px;
+        
+        .footerText {
+            font-weight: 300;
+        }
+    }
+
+    .footerBottom {
+        font-size: 90px;
+
+        .footerText {
+            font-weight: 300;
+        }
+    }
+}
+
+// footer
+// ------------------------------
+@media (max-width: 770px) {
+    .footer {
+    
+        .imgFooter {
+            transform: scale(.8);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+    
+        text-align: center;
+    
+        > div {
+            margin-bottom: 60px;
+        }
+    
+        .footerTop {
+            font-size: 50px;
+            
+            .footerText {
+                font-weight: 300;
+            }
+        }
+    
+        .footerBottom {
+            font-size: 60px;
+    
+            .footerText {
+                font-weight: 300;
+            }
+        }
+
+        .imgFooter {
+            transform: scale(.6);
+        }
+    }
+}
